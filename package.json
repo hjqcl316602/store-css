@@ -1,0 +1,31 @@
+{
+  "name": "store-css-basis",
+  "version": "1.1.1",
+  "description": "this is a store of css",
+  "main": "/dist/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjqcl316602/store-css.git"
+  },
+  "keywords": [
+    "store-css",
+    "css",
+    "css-libs"
+  ],
+  "author": "huangjunquan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hjqcl316602/store-css/issues"
+  },
+  "homepage": "https://github.com/hjqcl316602/store-css#readme",
+  "dependencies": {
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "pump": "^3.0.0"
+  }
+}

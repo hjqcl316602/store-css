@@ -1,0 +1,96 @@
+@import './theme.less';
+
+/**
+* 边框
+*/
+
+[class*=jq-border] {
+  position: relative
+}
+
+[class*=jq-border]:after {
+  content         : '';
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  transform-origin: 0 0;
+  pointer-events  : none;
+  box-sizing      : border-box;
+  width           : 200%;
+  height          : 200%;
+  transform       : scale(.5);
+  border-color    : @border-color-normal;
+  border-style    : solid;
+  border-width    : 0
+}
+
+/**
+* 边框 四周
+*/
+
+.jq-border:after {
+  border-width: 1px
+}
+
+.jq-border_top:after {
+  border-top-width: 1px
+}
+
+.jq-border_bottom:after {
+  border-bottom-width: 1px
+}
+
+.jq-border_left:after {
+  border-left-width: 1px
+}
+
+.jq-border_right:after {
+  border-right-width: 1px
+}
+
+/**
+* border的粗细
+*/
+.jq-border_thiner:after {
+  width    : 400%;
+  height   : 400%;
+  transform: scale(1/4);
+}
+
+.jq-border_thin:after {
+  width    : 300%;
+  height   : 300%;
+  transform: scale(1/3);
+}
+
+.jq-border_thick:after {
+  width    : 100%;
+  height   : 100%;
+  transform: scale(1);
+}
+
+/**
+* border的样式
+*/
+.jq-border_dashed:after {
+  border-style: dashed
+}
+
+/**
+* border的颜色
+*/
+.jq-border_lighter:after {
+  border-color: @border-color-lighter
+}
+
+.jq-border_light:after {
+  border-color: @border-color-light
+}
+
+.jq-border_dark:after {
+  border-color: @border-color-dark
+}
+
+.jq-border_darker:after {
+  border-color: @border-color-darker
+}

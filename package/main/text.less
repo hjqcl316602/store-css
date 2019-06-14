@@ -1,0 +1,412 @@
+@import './theme.less';
+
+/**
+* 文本 
+*/
+
+
+.jq-text,
+.jq-text-default {
+  color             : #000;
+  font-size         : 100%;
+  // font-family    : inherit;
+  // font-style     : normal;
+  // font-variant   : normal;
+  // font-weight    : normal;
+  // direction      : ltr;
+  // letter-spacing : normal;
+  // line-height    : normal;
+  // text-align     : left;
+  // text-decoration: none;
+  // text-indent    : 0;
+  // text-transform : none;
+  // word-spacing   : normal;
+  // word-break     : normal;
+  // word-wrap      : normal;
+
+}
+
+/**
+* 文本的字体颜色
+*/
+.jq-text-primary {
+  color: @color-primary;
+}
+
+.jq-text-warning {
+  color: @color-warning;
+}
+
+.jq-text-danger {
+  color: @color-danger
+}
+
+.jq-text-success {
+  color: @color-success
+}
+
+.jq-text-dark {
+  color: @color-dark
+}
+
+.jq-text-light {
+  color: @color-light
+}
+
+.jq-text-gray {
+  color: @color-gray
+}
+
+.jq-text-black {
+  color: @color-black
+}
+
+.jq-text-white {
+  color: @color-white
+}
+
+/**
+* 文本的字体大小
+*/
+.jq-text-none {
+  font-size: 0;
+}
+
+.jq-text-smaller {
+  font-size: @text-size-smaller;
+}
+
+.jq-text-small {
+  font-size: @text-size-small;
+}
+
+.jq-text-medium {
+  font-size: @text-size-medium;
+}
+
+.jq-text-large {
+  font-size: @text-size-large;
+}
+
+.jq-text-larger {
+  font-size: @text-size-larger;
+}
+
+/**
+* 文本的样式
+*/
+.jq-text_style-italic {
+  font-style: italic
+}
+
+.jq-text_style-oblique {
+  font-style: oblique
+}
+
+.jq-text_style,
+.jq-text_style-normal {
+  font-style: normal
+}
+
+.jq-text_style-inherit {
+  font-style: inherit
+}
+
+
+
+/**
+* 文本的字体粗细
+*/
+.jq-text_weight,
+.jq-text_weight-normal {
+  font-weight: normal
+}
+
+.jq-text_weight-bold {
+  font-weight: bold
+}
+
+.jq-text_weight-bolder {
+  font-weight: bolder
+}
+
+.jq-text_weight-lighter {
+  font-weight: lighter
+}
+
+.jq-text_weight-inherit {
+  font-weight: inherit
+}
+
+/**
+* 规定文本的方向 / 书写方向
+*/
+.jq-text_direction-ltr {
+  direction: ltr
+}
+
+.jq-text_direction-rtl {
+  direction: rtl
+}
+
+.jq-text_direction-inherit {
+  direction: inherit
+}
+
+/**
+* 文本字符间距
+*/
+.jq-text_letter-spacing,
+.jq-text_letter-spacing-normal {
+  letter-spacing: normal;
+}
+
+.jq-text_letter-spacing-smaller {
+  letter-spacing: @text-letter-spacing-smaller;
+}
+
+.jq-text_letter-spacing-small {
+  letter-spacing: @text-letter-spacing-small;
+}
+
+.jq-text_letter-spacing-medium {
+  letter-spacing: @text-letter-spacing-medium;
+}
+
+.jq-text_letter-spacing-large {
+  letter-spacing: @text-letter-spacing-large;
+}
+
+.jq-text_letter-spacing-larger {
+  letter-spacing: @text-letter-spacing-larger;
+}
+
+.jq-text_letter-spacing-inherit {
+  letter-spacing: inherit;
+}
+
+/**
+* 文本的行高
+* 需要文本在块级元素中才起作用的
+* 文本是行内元素则有默认的行高，不在自身元素起作用，而所占空间是该值大小
+*/
+.jq-text_height,
+.jq-text_height-normal {
+  line-height: normal
+}
+
+.jq-text_height-smaller {
+  line-height: @text-height-smaller
+}
+
+.jq-text_height-small {
+  line-height: @text-height-small
+}
+
+.jq-text_height-medium {
+  line-height: @text-height-medium
+}
+
+.jq-text_height-large {
+  line-height: @text-height-large
+}
+
+.jq-text_height-larger {
+  line-height: @text-height-larger
+}
+
+.jq-text_height-inherit {
+  line-height: inherit
+}
+
+
+/**
+* 文本的字体对齐方式
+*/
+.jq-text_align,
+.jq-text_align-left {
+  text-align: left
+}
+
+.jq-text_align-center {
+  text-align: center
+}
+
+.jq-text_align-right {
+  text-align: right
+}
+
+.jq-text_align-justify {
+  text-align: justify
+}
+
+.jq-text_align-inherit {
+  text-align: inherit
+}
+
+/**
+* 文本decoration,规定添加到文本的装饰效果
+*/
+.jq-text_decoration,
+.jq-text_decoration-normal,
+.jq-text_decoration-none {
+  text-decoration: none
+}
+
+.jq-text_decoration-underline {
+  text-decoration: underline
+}
+
+.jq-text_decoration-overline {
+  text-decoration: overline
+}
+
+.jq-text_decoration-line-through {
+  text-decoration: line-through
+}
+
+.jq-text_decoration-blink {
+  text-decoration: blink
+}
+
+.jq-text_decoration-inherit {
+  text-decoration: inherit
+}
+
+/**
+* 文本首行的缩进
+*/
+.jq-text_indent,
+.jq-text_indent-none,
+.jq-text_indent-normal {
+  text-indent: 0;
+}
+
+.jq-text_indent-smaller {
+  text-indent: @text-indent-smaller;
+}
+
+.jq-text_indent-small {
+  text-indent: @text-indent-small;
+}
+
+.jq-text_indent-medium {
+  text-indent: @text-indent-medium;
+}
+
+.jq-text_indent-large {
+  text-indent: @text-indent-large;
+}
+
+.jq-text_indent-larger {
+  text-indent: @text-indent-larger;
+}
+
+.jq-text_indent-inherit {
+  text-indent: inherit;
+}
+
+/**
+* 文本 大小写的转换
+*/
+.jq-text_transform,
+.jq-text_transform-normal,
+.jq-text_transform-none {
+  text-transform: none;
+}
+
+.jq-text_transform-capitalize {
+  text-transform: capitalize;
+}
+
+.jq-text_transform-lowercase {
+  text-transform: lowercase;
+}
+
+.jq-text_transform-uppercase {
+  text-transform: uppercase;
+}
+
+.jq-text_transform-inherit {
+  text-transform: inherit;
+}
+
+
+
+/**
+* 文本单词之间的间距
+*/
+.jq-text_word-spacing,
+
+.jq-text_word-spacing-normal {
+  word-spacing: normal;
+}
+.jq-text_word-spacing-smaller {
+  word-spacing: @text-word-spacing-smaller;
+}
+.jq-text_word-spacing-small {
+  word-spacing: @text-word-spacing-small;
+}
+.jq-text_word-spacing-medium {
+  word-spacing: @text-word-spacing-medium;
+}
+
+.jq-text_word-spacing-large {
+  word-spacing: @text-word-spacing-large;
+}
+.jq-text_word-spacing-larger {
+  word-spacing: @text-word-spacing-larger;
+} 
+.jq-text_word-spacing-inherit {
+  word-spacing: inherit;
+}
+
+
+
+
+/**
+* 文本 恰当的断字点进行换行
+*/
+.jq-text_break,
+.jq-text_break-normal {
+  word-break: normal
+}
+
+.jq-text_break-break-all {
+  word-break: break-all
+}
+
+.jq-text_break-keep-all {
+  word-break: keep-all
+}
+
+/**
+* 文本 允许长单词换行到下一行
+*/
+.jq-text_wrap,
+.jq-text_wrap-normal {
+  word-wrap: normal
+}
+
+.jq-text_wrap-break {
+  word-wrap: break-word
+}
+
+
+/**
+* 文本的截取
+*/
+
+.jq-text_ellipsis {
+  white-space  : nowrap;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+}
+
+.jq-text_clamp {
+  display           : -webkit-box;
+  overflow          : hidden; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; 
+  text-emphasis     : none;
+}

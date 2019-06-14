@@ -1,0 +1,619 @@
+@import './theme.less';
+/*
+*flex布局
+*/
+
+.jq-flex {
+  display   : flex;
+  flex-wrap : wrap;
+  box-sizing: border-box;
+}
+
+/*
+*flex布局 水平排列方式
+*/
+
+.jq-flex.jq-flex_justify,
+.jq-flex.jq-flex_justify-default,
+.jq-flex.jq-flex_justify-normal,
+.jq-flex.jq-flex_justify-start {
+  justify-content: flex-start
+}
+
+.jq-flex.jq-flex_justify-center {
+  justify-content: center
+}
+
+.jq-flex.jq-flex_justify-end {
+  justify-content: flex-end
+}
+
+.jq-flex.jq-flex_justify-between {
+  justify-content: space-between
+}
+
+.jq-flex.jq-flex_justify-around {
+  justify-content: space-around
+}
+
+.jq-flex.jq-flex_justify-baseline {
+  justify-content: baseline
+}
+
+/*
+*flex布局 垂直方向排列方式
+*/
+
+.jq-flex.jq-flex_items-center {
+  align-items: center
+}
+
+.jq-flex.jq-flex_items-baseline {
+  align-items: baseline
+}
+
+.jq-flex.jq-flex_items,
+.jq-flex.jq-flex_items-default,
+.jq-flex.jq-flex_items-normal,
+.jq-flex.jq-flex_items-start {
+  align-items: flex-start
+}
+
+.jq-flex.jq-flex_items-end {
+  align-items: flex-end
+}
+
+.jq-flex.jq-flex_items-center {
+  align-items: center
+}
+
+.jq-flex.jq-flex_items-center {
+  align-items: center
+}
+
+/*
+*flex布局 多根轴线的对齐方式
+*/
+
+.jq-flex.jq-flex_content-center {
+  align-content: center
+}
+
+.jq-flex.jq-flex_content,
+.jq-flex.jq-flex_content-default,
+.jq-flex.jq-flex_content-normal,
+.jq-flex.jq-flex_content-start {
+  align-content: flex-start
+}
+
+.jq-flex.jq-flex_content-end {
+  align-content: flex-end
+}
+
+.jq-flex.jq-flex_content-around {
+  align-content: space-around
+}
+
+.jq-flex.jq-flex_content-between {
+  align-content: space-between
+}
+
+.jq-flex.jq-flex_content-stretch {
+  align-content: stretch
+}
+
+/*
+*flex布局 决定主轴的方向
+*/
+.jq-flex.jq-flex_direction,
+.jq-flex.jq-flex_direction-normal,
+.jq-flex.jq-flex_direction-default,
+.jq-flex.jq-flex_direction-row {
+  flex-direction: row
+}
+
+.jq-flex.jq-flex_direction-row-reverse {
+  flex-direction: row-reverse
+}
+
+.jq-flex.jq-flex_direction-column {
+  flex-direction: column
+}
+
+.jq-flex.jq-flex_direction-column-reverse {
+  flex-direction: column-reverse
+}
+
+/*
+*flex布局 项目都排在一条线,如果一条轴线排不下，如何换行
+*/
+.jq-flex.jq-flex_wrap,
+.jq-flex.jq-flex_wrap-default,
+.jq-flex.jq-flex_wrap-normal,
+.jq-flex.jq-flex_wrap-nowrap {
+  flex-wrap: nowrap
+}
+
+.jq-flex.jq-flex_wrap-wrap {
+  flex-wrap: wrap
+}
+
+.jq-flex.jq-flex_wrap-wrap-reverse {
+  flex-wrap: wrap-reverse
+}
+
+
+/*
+*flex布局 子元素
+*/
+
+.jq-flex-item {
+  box-sizing: border-box
+}
+
+/*
+* flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选
+*/
+
+
+
+.jq-flex-item.jq-flex-item_flex,
+.jq-flex-item.jq-flex-item_flex-default,
+.jq-flex-item.jq-flex-item_flex-normal {
+  flex: 0 1 auto
+}
+
+.jq-flex-item.jq-flex-item_flex-none {
+  flex: none
+}
+
+.jq-flex-item.jq-flex-item_flex-auto {
+  flex: auto
+}
+
+/*
+*flex布局 放大比例
+*/
+
+.jq-flex-item.jq-flex-item_grow,
+.jq-flex-item.jq-flex-item_grow-default,
+.jq-flex-item.jq-flex-item_grow-none,
+.jq-flex-item.jq-flex-item_grow-normal {
+  flex-grow: 0
+}
+
+.jq-flex-item.jq-flex-item_grow-grow {
+  flex-grow: 1
+}
+
+/*
+*flex布局 缩小比例
+*/
+
+
+.jq-flex-item.jq-flex-item_strink-normal,
+.jq-flex-item.jq-flex-item_strink-default,
+.jq-flex-item.jq-flex-item_strink {
+  flex-shrink: 1
+}
+
+.jq-flex-item.jq-flex-item_strink-strink {
+  flex-shrink: 0
+}
+
+/*
+* 允许单个项目不同于其项目的对齐方式
+*/
+
+.jq-flex-item.jq-flex-item_self,
+.jq-flex-item.jq-flex-item_self-default,
+.jq-flex-item.jq-flex-item_self-normal,
+.jq-flex-item.jq-flex-item_self-auto {
+  align-self: auto
+}
+
+.jq-flex-item.jq-flex-item_self-start {
+  align-self: flex-start
+}
+
+.jq-flex-item.jq-flex-item_self-end {
+  align-self: flex-end
+}
+
+.jq-flex-item.jq-flex-item_self-center {
+  align-self: center
+}
+
+.jq-flex-item.jq-flex-item_self-baseline {
+  align-self: baseline
+}
+
+.jq-flex-item.jq-flex-item_self-stretch {
+  align-self: stretch
+}
+
+
+
+
+
+/**
+*  flex 布局 间距
+*/
+
+.jq-flex.jq-flex_gutter-smaller {
+  margin-left : -@gutter-smaller/2;
+  margin-right: -@gutter-smaller/2;
+}
+
+.jq-flex.jq-flex_gutter-smaller>.jq-flex-item {
+  padding-left : @gutter-smaller/2;
+  padding-right: @gutter-smaller/2;
+}
+
+.jq-flex.jq-flex_gutter-small {
+  margin-left : -@gutter-small/2;
+  margin-right: -@gutter-small/2;
+}
+
+.jq-flex.jq-flex_gutter-small>.jq-flex-item {
+  padding-left : @gutter-small/2;
+  padding-right: @gutter-small/2;
+}
+
+.jq-flex.jq-flex_gutter,
+.jq-flex.jq-flex_gutter-medium {
+  margin-left : -@gutter-medium/2;
+  margin-right: -@gutter-medium/2;
+}
+
+.jq-flex.jq-flex_gutter>.jq-flex-item,
+.jq-flex.jq-flex_gutter-medium>.jq-flex-item {
+  padding-left : @gutter-medium/2;
+  padding-right: @gutter-medium/2;
+}
+
+.jq-flex.jq-flex_gutter-large {
+  margin-left : -@gutter-large/2;
+  margin-right: -@gutter-large/2;
+}
+
+.jq-flex.jq-flex_gutter-large>.jq-flex-item {
+  padding-left : @gutter-large/2;
+  padding-right: @gutter-large/2;
+}
+
+.jq-flex.jq-flex_gutter-larger {
+  margin-left : -@gutter-larger/2;
+  margin-right: -@gutter-larger/2px;
+}
+
+.jq-flex.jq-flex_gutter-larger>.jq-flex-item {
+  padding-left : @gutter-larger/2;
+  padding-right: @gutter-larger/2;
+}
+
+/**
+*  flex 占据空间
+*/
+
+
+.jq-flex-item.jq-flex-item_w-1 {
+  flex-shrink: 0;
+  flex-basis : 1/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_w-2 {
+  flex-basis : 2/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-3 {
+  flex-basis : 3/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-4 {
+  flex-basis : 4/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-5 {
+  flex-basis : 5/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-6 {
+  flex-basis : 6/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-7 {
+  flex-basis : 7/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-8 {
+  flex-basis : 8/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-9 {
+  flex-basis : 9/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-10 {
+  flex-basis : 10/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-11 {
+  flex-basis : 11/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-12 {
+  flex-basis : 12/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-13 {
+  flex-basis : 13/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-14 {
+  flex-basis : 14/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-15 {
+  flex-basis : 15/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-16 {
+  flex-basis : 16/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-17 {
+  flex-basis : 17/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-18 {
+  flex-basis : 18/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-19 {
+  flex-basis : 19/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-20 {
+  flex-basis : 20/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-21 {
+  flex-basis : 21/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-22 {
+  flex-basis : 22/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-23 {
+  flex-basis : 23/24 * 100%;
+  flex-shrink: 0;
+}
+
+.jq-flex-item.jq-flex-item_w-24 {
+  flex-basis : 24/24 * 100%;
+  flex-shrink: 0;
+}
+
+/**
+* 布局 左偏移量
+*/
+
+.jq-flex-item.jq-flex-item_push-1 {
+  margin-left: 1/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-2 {
+  margin-left: 2/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-3 {
+  margin-left: 3/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-4 {
+  margin-left: 4/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-5 {
+  margin-left: 5/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_push-6 {
+  margin-left: 6/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-7 {
+  margin-left: 7/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-8 {
+  margin-left: 8/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-9 {
+  margin-left: 9/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-10 {
+  margin-left: 10/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_push-11 {
+  margin-left: 11/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-12 {
+  margin-left: 12/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-13 {
+  margin-left: 13/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-14 {
+  margin-left: 14/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-15 {
+  margin-left: 15/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_push-16 {
+  margin-left: 16/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-17 {
+  margin-left: 17/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-18 {
+  margin-left: 18/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-19 {
+  margin-left: 19/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-20 {
+  margin-left: 20/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_push-21 {
+  margin-left: 21/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-22 {
+  margin-left: 22/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-23 {
+  margin-left: 23/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_push-24 {
+  margin-left: 24/24 * 100%
+}
+
+
+/**
+* 布局 右偏移量
+*/
+
+.jq-flex-item.jq-flex-item_pull-1 {
+  margin-right: 1/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-2 {
+  margin-right: 2/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-3 {
+  margin-right: 3/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-4 {
+  margin-right: 4/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-5 {
+  margin-right: 5/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_pull-6 {
+  margin-right: 6/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-7 {
+  margin-right: 7/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-8 {
+  margin-right: 8/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-9 {
+  margin-right: 9/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-10 {
+  margin-right: 10/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_pull-11 {
+  margin-right: 11/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-12 {
+  margin-right: 12/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-13 {
+  margin-right: 13/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-14 {
+  margin-right: 14/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-15 {
+  margin-right: 15/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_pull-16 {
+  margin-right: 16/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-17 {
+  margin-right: 17/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-18 {
+  margin-right: 18/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-19 {
+  margin-right: 19/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-20 {
+  margin-right: 20/24 * 100%;
+}
+
+.jq-flex-item.jq-flex-item_pull-21 {
+  margin-right: 21/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-22 {
+  margin-right: 22/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-23 {
+  margin-right: 23/24 * 100%
+}
+
+.jq-flex-item.jq-flex-item_pull-24 {
+  margin-right: 24/24 * 100%
+}

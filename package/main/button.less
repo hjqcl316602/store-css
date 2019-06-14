@@ -1,0 +1,292 @@
+@import './theme.less';
+
+/**
+* 按钮
+*/
+.jq-btn {
+
+  outline                    : none;
+  border                     : none;
+  cursor                     : pointer; // 手机端可以取消该属性，否则会出现按键激活样式
+  font-size                  : 14px;
+  font-weight                : 800;
+  font-style                 : normal;
+  text-decoration            : none;
+  appearance                 : none;
+  box-sizing                 : border-box;
+  text-align                 : center;
+  position                   : relative;
+  //display                  : inline-block; 
+  //color                    : @color-dark;
+  background-color           : transparent;
+  -webkit-tap-highlight-color: transparent;
+  overflow                   : hidden;
+}
+
+/**
+* 按钮 触发触发动画
+*/
+
+.jq-btn::before {
+  content         : " ";
+  position        : absolute;
+  top             : 50%;
+  left            : 50%;
+  opacity         : 0;
+  width           : 100%;
+  height          : 100%;
+  border          : inherit;
+  border-color    : #000;
+  background-color: #000;
+  border-radius   : inherit;
+  transform       : translate(-50%, -50%);
+  transition      : all .3s;
+}
+
+.jq-btn:active::before {
+  opacity: .1;
+}
+
+
+/**
+* 按钮 块级 or 行内
+*/
+.jq-btn {
+  display: inline-block
+}
+
+.jq-btn.jq-btn_long {
+  display: block
+}
+
+/**
+* 按钮 文本截取
+*/
+
+.jq-btn.jq-btn_ellipsis {
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  word-break   : break-word;
+  white-space  : nowrap;
+  display      : block
+}
+
+/**
+* 按钮 文本截取
+*/
+.jq-btn.jq-btn_disabled {
+  opacity: .6;
+  cursor : not-allowed;
+
+  &::before {
+    display: none;
+  }
+}
+
+/**
+* 按钮 按钮大小
+*/
+
+.jq-btn.jq-btn_smaller {
+  line-height: @btn-size-smaller;
+  padding    : 0 4px;
+}
+
+.jq-btn.jq-btn_small {
+  line-height: @btn-size-small;
+  padding    : 0 4px;
+}
+
+.jq-btn,
+.jq-btn.jq-btn_medium {
+  line-height: @btn-size-medium;
+  padding    : 0 8px;
+}
+
+.jq-btn.jq-btn_large {
+  line-height: @btn-size-large;
+  padding    : 0 8px;
+}
+
+.jq-btn.jq-btn_larger {
+  line-height: @btn-size-larger;
+  padding    : 0 8px;
+}
+
+/**
+* 按钮 圆角样式
+*/
+
+
+.jq-btn.jq-btn_radius {
+  border-radius: 4px;
+}
+
+.jq-btn.jq-btn_smaller.jq-btn_circle {
+  border-radius: @btn-size-smaller;
+}
+
+.jq-btn.jq-btn_small.jq-btn_circle {
+  border-radius: @btn-size-small;
+}
+
+.jq-btn.jq-btn_circle,
+.jq-btn.jq-btn_medium.jq-btn_circle {
+  border-radius: @btn-size-medium;
+}
+
+.jq-btn.jq-btn_large.jq-btn_circle {
+  border-radius: @btn-size-large;
+}
+
+.jq-btn.jq-btn_larger.jq-btn_circle {
+  border-radius: @btn-size-larger;
+}
+
+/**
+* 按钮 默认样式
+*/
+
+.jq-btn,
+.jq-btn.jq-btn_dark {
+  color: @color-dark;
+}
+
+
+.jq-btn.jq-btn_light {
+  color: @color-light;
+}
+
+.jq-btn.jq-btn_gray {
+  color: @color-gray;
+}
+
+.jq-btn.jq-btn_black {
+  color: @color-black;
+}
+
+.jq-btn.jq-btn_white {
+  color: @color-white;
+}
+
+.jq-btn.jq-btn_primary {
+  color: @color-primary;
+}
+
+.jq-btn.jq-btn_danger {
+  color: @color-danger;
+}
+
+.jq-btn.jq-btn_warning {
+  color: @color-warning;
+}
+
+.jq-btn.jq-btn_success {
+  color: @color-success;
+}
+
+/**
+* 按钮 填充样式
+*/
+
+.jq-btn.jq-btn_pack{
+  box-shadow: 0 0 1px rgba(0,0,0,0.2)
+}
+
+
+.jq-btn.jq-btn_pack,
+.jq-btn.jq-btn_pack.jq-btn_dark {
+  background-color: @color-dark;
+  color           : #fff;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_light {
+  background-color: @color-light;
+  color           : #fff;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_gray {
+  background-color: @color-gray;
+  color           : #fff;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_black {
+  background-color: @color-black;
+  color           : #fff;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_white {
+  background-color: @color-white;
+  color           : @color-dark;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_primary {
+  background-color: @color-primary;
+  color           : #fff;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_danger {
+  background-color: @color-danger;
+  color           : #fff;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_warning {
+  background-color: @color-warning;
+  color           : #fff;
+}
+
+.jq-btn.jq-btn_pack.jq-btn_success {
+  background-color: @color-success;
+  color           : #fff;
+}
+
+/**
+* 按钮 镂空样式
+*/
+
+.jq-btn.jq-btn_hollow,
+.jq-btn.jq-btn_hollow.jq-btn_dark {
+  color : @color-dark;
+  border: 1px solid @color-dark;
+
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_light {
+  color : @color-light;
+  border: 1px solid @color-light;
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_gray {
+  color : @color-gray;
+  border: 1px solid @color-gray;
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_black {
+  color : @color-black;
+  border: 1px solid @color-black;
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_white {
+  color : @color-white;
+  border: 1px solid @color-white;
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_primary {
+  color : @color-primary;
+  border: 1px solid @color-primary;
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_danger {
+  color : @color-danger;
+  border: 1px solid @color-danger;
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_warning {
+  color : @color-warning;
+  border: 1px solid @color-warning;
+}
+
+.jq-btn.jq-btn_hollow.jq-btn_success {
+  color : @color-success;
+  border: 1px solid @color-success;
+}
